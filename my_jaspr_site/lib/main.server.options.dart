@@ -5,11 +5,14 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/server.dart';
+import 'package:my_jaspr_site/components/app_footer.dart' as _app_footer;
 import 'package:my_jaspr_site/components/app_header.dart' as _app_header;
 import 'package:my_jaspr_site/section/achievements.dart' as _achievements;
 import 'package:my_jaspr_site/section/calender.dart' as _calender;
 import 'package:my_jaspr_site/section/clients.dart' as _clients;
 import 'package:my_jaspr_site/section/community.dart' as _community;
+import 'package:my_jaspr_site/section/community_updates.dart'
+    as _community_updates;
 import 'package:my_jaspr_site/section/customers.dart' as _customers;
 import 'package:my_jaspr_site/section/hero.dart' as _hero;
 import 'package:my_jaspr_site/section/unlock.dart' as _unlock;
@@ -34,11 +37,13 @@ ServerOptions get defaultServerOptions => ServerOptions(
   clientId: 'main.client.dart.js',
 
   styles: () => [
+    ..._app_footer.AppFooter.styles,
     ..._app_header.AppHeader.styles,
     ..._achievements.Achievements.styles,
     ..._calender.Calender.styles,
     ..._clients.Clients.styles,
     ..._community.Community.styles,
+    ..._community_updates.CommunityUpdates.styles,
     ..._customers.Customers.styles,
     ..._hero.Hero.styles,
     ..._unlock.Unlock.styles,
